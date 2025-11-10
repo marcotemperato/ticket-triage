@@ -1,13 +1,31 @@
-# ticket-triage
-# Project Work - Analisi e classificazione di ticket aziendali
+# Ticket-Triage Project Work - Marco Temperato
 
-Autore: Marco Temperato  
-Matricola: 0312301980  
+**Titolo:** Sviluppo di un modello di Machine Learning per la gestione dei ticket aziendali  
+**Autore:** Marco Temperato (Matricola 0312301980)
 
-Questo repository contiene il materiale del project work legato alla tesi universitaria.  
-Il progetto mostra un sistema di classificazione di ticket aziendali basato su un dataset sintetico generato in Python.  
-Tutti i dati sono artificiali e non fanno riferimento a persone o aziende reali.
+## Descrizione
+Prototipo per il triage automatico dei ticket aziendali: dataset sintetico, modello di classificazione, script batch per predizioni e dashboard interattiva (Streamlit).
 
-## Contenuto
-- `data_gen.py` → Script Python per la generazione dei ticket
-- `synthetic_tickets.csv` → Dataset creato (300 righe)
+## Contenuto del repository
+- `data/`
+  - `synthetic_tickets.csv` : dataset sintetico (300 ticket)
+  - `predizioni_ticket.csv` : esempi di output batch
+- `model/`
+  - `modello_ticket.pkl` : modello addestrato
+  - `vectorizer.pkl` : TF-IDF vectorizer
+- `notebooks/`
+  - `model_training.ipynb` : notebook di training e valutazione
+- `dashboard/`
+  - `app.py` : Streamlit app per test manuale dei ticket
+- `data_gen.py` : script per generare il dataset sintetico
+- `predict_batch.py` : script per predizioni in batch
+- `README.md` : questo file
+
+## Strumenti
+Python 3.9+, pacchetti: pandas, scikit-learn, streamlit, joblib, matplotlib, nltk
+
+## Come eseguire
+1. Addestrare (opzionale): eseguire `notebooks/model_training.ipynb` in Colab/VSCode.
+2. Eseguire batch: `python predict_batch.py` → genera `data/predizioni_ticket.csv`.
+3. Eseguire dashboard: `streamlit run dashboard/app.py` → apre `http://localhost:8501`.
+
