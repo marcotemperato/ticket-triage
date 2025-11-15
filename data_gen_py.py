@@ -58,8 +58,6 @@ df.to_csv("synthetic_tickets.csv", index=False, encoding="utf-8")
 print("Dataset creato con successo!")  #visualizzo il dataset come prova
 df.head(10)
 
-import pandas as pd
-
 df = pd.read_csv("synthetic_tickets.csv", encoding="utf-8")
 
 # Dimensioni del dataset
