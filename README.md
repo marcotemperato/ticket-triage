@@ -1,10 +1,21 @@
-# Ticket-Triage Project Work - Marco Temperato
+# Ticket Triage – Classificazione Automatica dei Ticket Aziendali
 
-**Titolo:** Sviluppo di un modello di Machine Learning per la gestione dei ticket aziendali  
-**Autore:** Marco Temperato (Matricola 0312301980)
+Questo progetto implementa un prototipo di sistema di **triage automatico dei ticket aziendali** basato su tecniche di *Machine Learning* e *Natural Language Processing (NLP)*.  
+L’obiettivo è classificare automaticamente i ticket in base al loro contenuto testuale, assegnando:
 
-## Descrizione
-Prototipo per il triage automatico dei ticket aziendali: dataset sintetico, modello di classificazione, script batch per predizioni e dashboard interattiva (Streamlit).
+- **Categoria**: Amministrativa, Tecnica, Commerciale  
+- **Priorità stimata**: Bassa, Media, Alta  
+
+Il sistema è pensato come supporto agli operatori che gestiscono richieste interne o segnalazioni clienti, riducendo i tempi di smistamento e aumentando la coerenza nelle decisioni.
+
+---
+
+## Funzionalità principali
+
+### Generazione del dataset sintetico
+Non essendo disponibili ticket reali, il dataset viene generato in modo artificiale tramite lo script:
+
+
 
 ## Contenuto del repository
 - `data/`
